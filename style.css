@@ -177,6 +177,7 @@ a {
 
 
 .footer {
+    padding: 1rem 2rem;
     position: absolute;
     transform: translateY(100%);
     bottom: 0;
@@ -184,8 +185,13 @@ a {
     background-color: black;
     color: white !important;
     display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    align-items: flex-start;
+    flex-direction: column;
+    gap: 1.75rem;
+    align-items: center;
     justify-content: center;
+}
+
+.people {
+    display: flex;
+    gap: 2rem;
 }
