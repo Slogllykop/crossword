@@ -1,0 +1,191 @@
+*,*::before,*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    transition: all 0.3s;
+}
+
+.navbar {
+    background-color: #fff;
+    border-bottom: 1px solid black;
+    height: 10vh;
+    /* position: fixed; */
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    -webkit-box-shadow: -12px 22px 77px -18px rgba(0,0,0,0.75);
+    -moz-box-shadow: -12px 22px 77px -18px rgba(0,0,0,0.75);
+    box-shadow: -12px 22px 77px -18px rgba(0,0,0,0.75);
+}
+
+.navbar > .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    height: 100%;
+}
+
+.content > img {
+    height: 8vh;
+    width: 8vh;
+}
+
+.content > h1 {
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+.main_body {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main_body::before {
+    content: '';
+    position: absolute;
+    height: 90vh;
+    width: 100%;
+    z-index: -1;
+    opacity: 15%;
+    background-image: url(https://st.depositphotos.com/2101611/4338/v/600/depositphotos_43381027-stock-illustration-black-and-white-chequered-abtract.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main_body > h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.crossword > a > div > h1 {
+    background-color: black;
+    color: white;
+    padding: 1rem 3rem;
+    border-radius: 4rem;
+    margin: 2rem;
+}
+
+.crossword > a > div > h1:hover {
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+    transform: scale(1.1);
+}
+
+.navbar > .back {
+    position: absolute;
+    right: 1rem;
+    top: 3.5vh;
+}
+
+.back > a {
+    color: black !important;
+}
+
+.back:hover {
+    transform: scale(1.2);
+    transform-origin: right;
+}
+
+.figure {
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.main {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 5vh;
+}
+
+.box {
+    background-color: white;
+    height: 2.5rem; width: 2.5rem;
+    border: 2px solid black;
+    font-size: 0.75rem;
+}
+
+.disabled {
+    background-color: black;
+}
+
+.questions {
+    width: 80vh;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.col_heading {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 2px solid black;
+}
+
+.question {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid black;
+    width: 20vw;
+}
+
+.answers {
+    font-weight: bold;
+    display: none;
+}
+
+.reveal {
+    position: absolute;
+    left: 43vw;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    padding: 1rem 2rem;
+    border-radius: 4rem;
+    cursor: pointer;
+}
+
+.reveal:hover {
+    transform: scale(1.1);
+}
+
+
+.footer {
+    position: absolute;
+    transform: translateY(100%);
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white !important;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: flex-start;
+    justify-content: center;
+}
